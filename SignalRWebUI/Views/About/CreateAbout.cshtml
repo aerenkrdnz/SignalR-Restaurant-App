@@ -1,0 +1,52 @@
+﻿@model CreateAboutDto
+
+@{
+    ViewData["Title"] = "CreateAbout";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Ana Sayfa Hakkımızda İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Hakkımızda Yazı Girişi</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="aboutTitle">Başlığı Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Title" id="aboutTitle">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="aboutImageUrl">Görselin Url'ini Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ImageUrl" id="aboutImageUrl">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="aboutDescription">Açıklama Giriniz</label>
+                                <textarea rows="6" class="form-control" asp-for="Description" id="aboutDescription"> </textarea>
+
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-success">Hakkımda Yazısını Ekle</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

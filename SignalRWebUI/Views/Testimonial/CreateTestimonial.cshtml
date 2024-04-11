@@ -1,0 +1,60 @@
+﻿@model CreateTestimonialDto
+
+@{
+    ViewData["Title"] = "CreateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Müşteri Yorum İşlemleri</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Yeni Müşteri Yorumu Ekleme Sayfası</div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="testimonialName">Müşteri Adını Soyadını Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Name" id="testimonialName">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="testimonialTitle">Müşteri Ünvanını Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Title" id="testimonialTitle">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="testimonialImageUrl">Müşteri Resim Dosya Yolunu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="ImageUrl" id="testimonialImageUrl">
+
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="testimonialComment">Müşteri Yorumunu Giriniz</label>
+                                <input type="text" class="form-control" asp-for="Comment" id="testimonialComment">
+
+                            </div>
+
+                        </div>
+                        <div class="card-action">
+                            <button class="btn btn-success">Müşteri Yorumunu Kaydet</button>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
