@@ -18,3 +18,7 @@
 --Günlük Kazanç
 --Ortalama Sipariş Tutarı
 --Masa Sayısı
+
+-----------
+
+İstatistiklerin Consume Edilme işlemi
