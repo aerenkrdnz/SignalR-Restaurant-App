@@ -56,7 +56,7 @@ namespace SignalRApi.Hubs
 
             var value9 = _productService.TProductNameByMinPrice();
             await Clients.All.SendAsync("ReceiveProductNameByMinPrice", value9);
-
+             
             var value10 = _productService.TProductPriceByHamburger();
             await Clients.All.SendAsync("ReceiveProductPriceByHamburger", value10.ToString("0.00") + "₺");
 

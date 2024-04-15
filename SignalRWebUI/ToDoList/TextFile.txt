@@ -22,3 +22,15 @@
 -----------
 
 İstatistiklerin Consume Edilme işlemi
+
+----
+ProgressBar istatistik
+Order Sayfası UI
+Qr kod Sistemi
+Default kontrolü
+menü sayfası kontrolü UI
+LogOut
+Ayarlar
+Uygulama Seviyesinde Authorize
+Mail işlemi
+Arama İşlemi

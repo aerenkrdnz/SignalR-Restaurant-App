@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.EntityLayer.Entities;
 using SignalRWebUI.Dtos.IdentityDtos;
 
 namespace SignalRWebUI.Controllers
 {
-	public class LoginController : Controller
+    [AllowAnonymous]
+    public class LoginController : Controller
 	{
+		
 		private readonly SignInManager<AppUser> _signInManager;
 
 		public LoginController(SignInManager<AppUser> signInManager)
