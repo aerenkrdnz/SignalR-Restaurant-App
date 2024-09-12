@@ -23,10 +23,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewComponents\MenuComponents\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SignalR.DataAccessLayer\SignalR.DataAccessLayer.csproj" />
     <ProjectReference Include="..\SignalR.EntityLayer\SignalR.EntityLayer.csproj" />
   </ItemGroup>

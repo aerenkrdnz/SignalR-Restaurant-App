@@ -10,17 +10,14 @@ var requireAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticat
 
 // Add services to the container.
 builder.Services.AddDbContext<SignalRContext>();
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<SignalRContext>();
+
 builder.Services.AddHttpClient();
 builder.Services.AddControllersWithViews(opt =>
 {
-    opt.Filters.Add(new AuthorizeFilter(requireAuthorizePolicy));
+    
 });
 
-builder.Services.ConfigureApplicationCookie(opt =>
-{
-    opt.LoginPath = "/Login/Index/";
-});
+
 
 var app = builder.Build();
 
